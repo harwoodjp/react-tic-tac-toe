@@ -1,6 +1,29 @@
+.board {
+	border:1px solid #313131;
+	display:flex;
+	margin:1em;
+	flex-direction:row;
+	flex-wrap:wrap;
+	width:60em;
+}
 body {
+	background-color:#D0D0D0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .container {
 	margin:2em;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.square {
+	border:1px solid #373737;
+	background-color:#F6F6F6;
+	cursor:pointer;
+	flex-grow:1;
+	height:17em;
+	width:33%;
+	&:hover {
+		background-color:#F1F1F1;
+	}
 }

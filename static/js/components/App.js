@@ -1,14 +1,6 @@
 import React from 'react';
-
-class Container extends React.Component {
-	render() {
-	    return (
-	      <div className="container">
-	          {this.props.children}
-	      </div>
-	    );
-	}
-}
+import Container from './Container';
+import TicTacToe from './TicTacToe';
 
 class App extends React.Component {
 
@@ -18,16 +10,13 @@ class App extends React.Component {
 
 	componentWillMount() {
 		this.setState({
-			message: "!"
 		})
 	}
 
 	render() {
 		return(
 			<Container>
-				<h1 onClick={() => this.setState({message: this.state.message + "!"})   }>
-					Hello, {this.props.name}{this.state.message}
-				</h1>
+				<TicTacToe />
 			</Container>
 		) 
 	}
