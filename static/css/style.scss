@@ -4,7 +4,7 @@
 	margin:1em;
 	flex-direction:row;
 	flex-wrap:wrap;
-	width:60em;
+	width:30em;
 }
 body {
 	background-color:#D0D0D0;
@@ -21,9 +21,13 @@ body {
 	background-color:#F6F6F6;
 	cursor:pointer;
 	flex-grow:1;
-	height:17em;
-	width:33%;
+	height:8.5em;
+	width:30%;
 	&:hover {
 		background-color:#F1F1F1;
+	}
+	span {
+		font-size:14vh;
+		margin-left:.4em;
 	}
 }

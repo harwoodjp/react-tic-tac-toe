@@ -8,11 +8,6 @@ class App extends React.Component {
 		super(props)
 	}
 
-	componentWillMount() {
-		this.setState({
-		})
-	}
-
 	render() {
 		return(
 			<Container>
